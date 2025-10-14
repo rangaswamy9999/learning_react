@@ -8,4 +8,4 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
   root.render(<PrintName />);
 }, 1000);
-//root.render(<PrintName />);
+root.render(<PrintName />);
