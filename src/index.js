@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import PrintName from './App';
+import { UserContext } from './userContext';
+import App from './App';
+import {UserProvider } from './userContext';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-setInterval(() => {
-  root.render(<PrintName />);
-}, 1000);
-root.render(<PrintName />);
+root.render(
+  <UserProvider>
+    <App />
+  </UserProvider>
+);
